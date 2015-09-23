@@ -60,7 +60,8 @@
     "config": "^1.16.0",
     "envify": "^3.4.0",
     "envify-config": "0.0.1",
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "store2": "^2.3.0"
   },
   "repository": {
     "type": "git",
