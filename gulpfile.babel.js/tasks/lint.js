@@ -7,7 +7,7 @@ const TASK_NAME = 'lint'
 function lintOnce(fileConf) {
   return gulp.src(fileConf.src)
     .pipe(eslint(fileConf.options))
-    .pipe(eslint.formatEach('compact', process.stderr))
+    .pipe(eslint.formatEach())
     .pipe(process.env.NODE_ENV === 'production' ? eslint.failOnError() : gutil.noop())
 }
 

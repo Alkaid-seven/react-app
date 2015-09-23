@@ -3,12 +3,16 @@ import browserSync from 'browser-sync'
 
 const TASK_NAME = 'server'
 
-function serverOnce(fileConf) {
-  browserSync(fileConf.options)
+function serverOnce(callback, fileConf) {
+  browserSync
+    .create(TASK_NAME)
+    .init(fileConf.options, callback)
 }
 
-function server() {
-  gulp.autoRegister(TASK_NAME, serverOnce)
+function server(callback) {
+  gulp.autoRegister(TASK_NAME, serverOnce.bind(this, callback))
 }
 
-export default gulp.task(TASK_NAME, server)
+gulp.task(TASK_NAME, server)
+
+export default server

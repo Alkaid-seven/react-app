@@ -8,14 +8,6 @@ export default {
   options: {
     notify: false,
     logSnippet: false,
-    snippetOptions: {
-      rule: {
-        match: /$/,
-        fn: function () {
-          return ''
-        }
-      }
-    },
     server: {
       baseDir: `${gulp.config('root.dist')}`,
       middleware: [
