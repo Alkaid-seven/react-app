@@ -4,7 +4,7 @@ export default {
   'src': [
     `${gulp.config('root.dist')}/**`
   ],
-  'dest': `${gulp.config('root.dist')}/cdn`,
+  'dest': `${gulp.config('root.dist')}/`,
   'options': {
     'dontRenameFile': [
       /^\/index.html/g

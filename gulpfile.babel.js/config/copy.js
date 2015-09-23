@@ -4,7 +4,7 @@ export default {
   'files': [
     {
       'src': [
-        `${gulp.config('root.src')}/*.html`
+        `${gulp.config('root.src')}/**/*.html`
       ],
       'dest': `${gulp.config('root.dist')}`
     }
