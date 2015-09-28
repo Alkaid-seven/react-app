@@ -1,0 +1,112 @@
+1.第三方依赖（ps:一下所有插件信息均可在npm上面找到详尽文档)
+    "devDependencies": {
+        "autoprefixer-stylus": “^0.7.1",
+            // autoprefixer解析CSS文件并且添加浏览器前缀到CSS规则里
+        "babel": “^5.8.23",
+            // 代码转换器,将符合ES6标准的代码转换为符合ES5的辨准代码，使可运行在主流JS引擎中
+        "babel-eslint": “^4.1.3",
+             // 使用 ESLint 编码规则
+        "babel-runtime": “^5.8.24”,
+             //  支持使用ES6 特性
+        "babelify": “^6.3.0",
+            // Babel browserify transform
+        "browser-sync": “^2.9.6",
+            // Live CSS Reload & Browser Syncing
+        "browserify": “^11.1.0”,
+            // Browerify 把 NodeJS 对模块的管理机制引入到了浏览器端,允许使用同样的方式来加载模      块
+        "bundle-collapser": “^1.2.1",
+            // convert bundle paths to IDS to save bytes in browserify bundles
+        "chai": “^3.3.0",
+            // 进行Node.js测试,Mocha以及Chai断言库来进行测试工作
+        "compression": “^1.5.2",
+            // 用 compression 中间件压缩和处理静态内容
+        "del": “^2.0.2",
+            // Delete files/folders using globs
+        "eslint-plugin-react": “^3.4.2",
+            // React specific linting rules for ESLint
+        "gulp": “^3.9.0",
+            // 一个自动化构建工具,开发者可以使用它在项目开发过程中自动执行常见任务。
+        "gulp-eslint": “^1.0.0",
+            // A gulp plugin for processing files with eslint
+        "gulp-iconfont": “^5.0.0",
+            // Create icon fonts from several SVG icons
+        "gulp-rename": “^1.2.2",
+            // gulp-rename is a gulp plugin to rename files easily.
+        "gulp-rev-all": “^0.8.21",
+            // Static asset revisioning by appending content hash to filenames: unicorn.css => unicorn.098f6bcd.css, also re-writes references in each file to new reved name.
+        "gulp-spawn-mocha": “^2.2.1",
+            // Runs Mocha as a child process.
+        "gulp-streamify": “^1.0.2",
+            // Wrap old plugins to support streams
+        "gulp-stylus": “^2.0.7",
+            // Stylus plugin for gulp
+        "gulp-svg-ignore": “0.0.2",
+            // Just for removing the layers of svg sources
+        "gulp-symlink": “^2.1.2",
+            // Create symlinks during your gulp build.
+        "gulp-sync-processor": "^0.1.3",
+        "gulp-uglify": “^1.4.1",
+            // Minify files with UglifyJS.
+        "gulp-util": “^3.0.6",
+            // Utility functions for gulp plugins
+        "gulp-webdriver": “^1.0.1",
+            // a gulp plugin to run selenium tests with the WebdriverIO testrunner
+        "istanbul": “^0.3.20",
+            // a JS code coverage tool written in JS
+        "jsdom": “^6.5.1",
+            // A JavaScript implementation of the DOM and HTML standards
+        "lodash": “^3.10.1",
+            // The modern build of lodash modular utilities.
+        "map-stream": “0.0.6",
+            // construct pipes of streams of events
+        "md5": “^2.0.0",
+            // js function for hashing messages with MD5
+        "merge-stream": “^1.0.0",
+            // Create a stream that emits events from multiple other streams
+        "mocha": “^2.3.3",
+            // simple, flexible, fun test framework
+        "portscanner": “^1.0.0",
+            // Asynchronous port scanner for Node.js
+        "ps-node": “0.0.5",
+            // A Node.js module for looking up running processes.
+        "require-dir": “^0.3.0",
+            // Node helper to require() directories.
+        "run-sequence": “^1.1.4",
+            // Run a series of dependent gulp tasks in order
+        "selenium-standalone": “^4.6.0",
+            // installs a selenium-standalone command line to install and start a standalone selenium server
+        "through": “^2.3.8",
+            // simplified stream construction
+        "vinyl-source-stream": “^1.1.0",
+            // Use conventional text streams at the start of your gulp or vinyl pipelines
+        "watchify": “^3.4.0",
+            // watch mode for browserify builds
+        "webdriverio": “^3.2.4"
+            // A nodejs bindings implementation for selenium 2.0/webdriver
+    },
+    "dependencies": {
+        "classnames": “^2.1.3",
+            // A simple javascript utility for conditionally joining classNames together.
+        "config": “^1.16.0",
+            // Configuration control for production node deployments
+        "envify": “^3.4.0",
+            // Selectively replace Node-style environment variables with plain strings.
+        "envify-config": “0.0.1",
+            // A simple module that combines the envify and config modules for Browserify process configuration.
+        "react": “^0.13.3”
+            // React is a JavaScript library for building user interfaces.
+    }
+
+2.目录结构
+    ├── e2e         端到端测试文件（functional test)
+    ├── gulpfile.babel.js   gulp file
+    ├── package.json        node依赖管理
+    ├── node_modules    包管理目录（执行npm install 之后出现）
+    ├── public          静态资源存放
+    ├── shared          共享资源存放（icon，公用函数）
+    ├── src         源代码
+    ├─ .babelrc         es7语法特性支持
+    ├─ .editorconfig        代码风格维护文件
+    ├─ .eslintrc            ESLint 配置文件
+    ├─ .istanbul.yml        测试覆盖配置文件
+    └─ wdio.conf.js     测试配置文件
